@@ -2,9 +2,7 @@ import os
 import pandas as pd
 
 class FileLoader(object):
-    #@classmethod
-    #currDate = np.datetime64(rowSeries['Date']) #used to do time comparison 
-
+    
     defaultDateFormat = "%m/%d/%Y"
     databaseDateFormat = "%Y-%m-%d %H:%M:%S"
 
