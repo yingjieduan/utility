@@ -18,7 +18,7 @@ def standardize_csv_data(input_file_path, output_file_path, begin_column_num, en
     pd.DataFrame(standard_df).to_csv(output_file_path)
 
 
-def standardize_dataset(dataset, scaler_path=None, standardization_scaler_function = preprocessing.StandardScaler):
+def standardize_dataset(dataset, scaler_path=None, standardization_scaler_function = preprocessing.StandardScaler()):
     scaler = standardization_scaler_function.fit(dataset)
 
     # store the standard scaler into scaler_path
